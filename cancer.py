@@ -102,7 +102,7 @@ By using this app, patients can take proactive measures to prevent cancer or det
         input = np.array(result).reshape(1,-1)
         #st.write(input)
 
-        m = joblib.load("cancer_model")
+        m = joblib.load("cancer_model1")
 
         prediction = m.predict(input)
         #sst.write(prediction)
