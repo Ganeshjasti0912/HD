@@ -71,7 +71,7 @@ def diabetes_pred():
         
         # Load the model with pickle
         try:
-            with open("diabetes_model.pkl", "rb") as file:
+            with open("diabetes_model", "rb") as file:
                 model = pickle.load(file)
                 
             # Perform prediction
