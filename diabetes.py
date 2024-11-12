@@ -83,8 +83,6 @@ By providing users with personalized risk assessments, the Diabetes Predictor Ap
 		#st.write(input)
 
 		m = joblib.load("diabetes_model")
-		with open("diabetes_model.pkl", "rb") as file:
-              m = pickle.load(file)
 
 		prediction = m.predict(input)
 		#st.write(prediction)
